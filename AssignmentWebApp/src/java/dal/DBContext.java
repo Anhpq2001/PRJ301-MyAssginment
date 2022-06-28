@@ -4,10 +4,17 @@
  */
 package dal;
 
+import java.sql.Connection;
+
 /**
  *
  * @author Admin
  */
-public class DBContext {
+public abstract class DBContext {
+    protected Connection connection;
+    String user = "anhpq";
+    String pass = "1234567890";
+    String url = "jdbc:sqlserver://localhost:1433;databaseName=assigmentDB";
+    
     
 }
