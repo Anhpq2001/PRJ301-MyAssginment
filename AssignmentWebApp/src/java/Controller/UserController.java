@@ -41,9 +41,7 @@ public class UserController extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
     throws ServletException, IOException {
-        String user = request.getParameter("user");
-        String pass = request.getParameter("password");
-        response.getWriter().print(user);
+        
     } 
 
     /** 
@@ -56,7 +54,9 @@ public class UserController extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
     throws ServletException, IOException {
-       
+       String user = request.getParameter("user");
+        String pass = request.getParameter("password");
+        response.getWriter().print(user);
     }
 
     /** 
